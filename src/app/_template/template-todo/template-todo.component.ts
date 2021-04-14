@@ -10,7 +10,8 @@ import { DataService } from '../../_service/data.service';
 })
 export class TemplateTodoComponent implements OnInit {
 
-  @Input() toDo$: ToDo;
+  @Input()
+  toDo$!: ToDo;
   @Output() ping: EventEmitter<any> = new EventEmitter<any>();
 
   constructor(
