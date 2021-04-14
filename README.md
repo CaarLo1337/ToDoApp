@@ -1,6 +1,7 @@
 # ToDoList
-
+My first AngularProject following a tutorial from [Johannes Schiel](https://github.com/Johannes-Schiel).
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.8.
+
 
 ## Development server
 
