@@ -1,17 +1,17 @@
-<div class="todo">
+<div class="todo" [class.done]="toDo$.status">
     <div class="todo-content">
         <div class="handle">
            <img src="../../../assets/drag.svg">
         </div>
         <div class="todo-content-check">
-            <img src="../../../assets/checkbox-empty.svg">
-            <!-- <img src="../../../assets/checkbox-done.svg"> -->
+            <img *ngIf="!toDo$.status" (click)="changeCheck($event)" src="../../../assets/checkbox-empty.svg">
+            <img *ngIf="toDo$.status" (click)="changeCheck($event)" src="../../../assets/checkbox-done.svg"> 
         </div>
         <div class="todo-content-title">
-            <input type="text" placeholder="ToDo Name">
+            <input (blur)="changeLabel($event)" type="text" [(ngModel)]="toDo$.label" placeholder="ToDo Name">
         </div>
     </div>
-    <div class="delete">
+    <div class="delete" (click)="deleteToDo($event)">
         <span>delete</span>
     </div>
     
