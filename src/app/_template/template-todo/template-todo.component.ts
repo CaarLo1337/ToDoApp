@@ -2,7 +2,6 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { ToDo } from '../../_interface/todo';
 import { EventPing } from '../../_interface/eventping';
 import { DataService } from '../../_service/data.service';
-import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-template-todo',
