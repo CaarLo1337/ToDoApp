@@ -9,8 +9,8 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 ## Json-Server
 
 open new bash.  
-make dir `mkdir server`
+make dir `mkdir server`  
 change dir `cd server`  
-Run `echo { \"todos\": [] } > db.json` to create db.json.
+Run `echo { \"todos\": [] } > db.json` to create db.json.  
 Run `npm install -g json-server` to install [json-server](https://github.com/typicode/json-server).  
 Run `json-server --watch db.json` to start json-server.  
